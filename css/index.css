@@ -6,6 +6,7 @@ display: flex;
 align-items: center;
 margin: -1rem;
 border: 5px solid black;
+padding-right: 20rem;
 }
 header img {
     margin: rem;
@@ -22,6 +23,7 @@ header img {
     padding: 0;
     display: flex;
     justify-content: space-between;
+    padding-left: 5rem;
  }
  nav li{
     float: right;
@@ -46,33 +48,198 @@ body{
     background-image:url(../img/fondo.png);
     background-repeat: none;
     background-size: 100%;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
 }
-div h2 {
+
+.estreno {
     color: white;
     position: flex;
     padding-top: 3rem;
-    padding-left: 17rem;
-    font-size: 40px ;
+    padding-left: 2rem;
+    font-size: 20px ;
     display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.populares {
+    color: white;
+    position: flex;
+    margin-top: -4rem ;
+    padding-left: 42rem;
+    font-size: 20px ;
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.recomendaciones {
+    color: white;
+    position: flex;
+    margin-top: -3.9rem ;
+    padding-left: 82rem;
+    font-size: 20px ;
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-section {
+.imagenesestreno {
     display: flex ;
     width: 600px;
     height: 430px;
     position: fixed;
     top: 15rem;
-    right: 80rem;
+    right: 81rem;
 }
-section img {
+.imagenesestreno img {
     width: 0px;
     flex-grow: 1;
     object-fit: cover;
     opacity: 0.8;
     transition: .5s;
 }
-section img:hover {
+.imagenesestreno img:hover {
     width: 300px;
     opacity: 1;
     filter: contrast(120%);
+}
+.imagenespopulares {
+    display: flex ;
+    width: 600px;
+    height: 430px;
+    position: fixed;
+    top: 15rem;
+    right: 41rem;
+}
+.imagenespopulares img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: .5s;
+}
+.imagenespopulares img:hover{
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+.imagenesrecomendaciones {
+    display: flex ;
+    width: 600px;
+    height: 430px;
+    position: fixed;
+    top: 15rem;
+    right: 1rem;
+}
+.imagenesrecomendaciones img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: .5s;
+}
+.imagenesrecomendaciones img:hover {
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+.button1 {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: rgb(0, 0, 0);
+    color: rgb(254, 254, 255);
+    margin-top: 30rem;
+    margin-left: 15rem;
+
+}
+.button1 a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button1 span {
+    position: relative;
+    transition: color 0.4s;
+}
+.button1:hover span {
+    color:red ;
+}
+.button2 {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: rgb(0, 0, 0);
+    color: rgb(254, 254, 255);
+    margin-top: 30rem;
+    margin-left: 32rem;
+
+}
+.button2 a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button2 span {
+    position: relative;
+    transition: color 0.4s;
+}
+.button2:hover span {
+    color:red ;
+}
+.button3 {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: rgb(0, 0, 0);
+    color: rgb(254, 254, 255);
+    margin-top: 30rem;
+    margin-left: 32rem;
+
+}
+.button3 a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button3 span {
+    position: relative;
+    transition: color 0.4s;
+}
+.button3:hover span {
+    color:red ;
+}
+footer {
+    background-color: #0d0d0d;
+    padding: 1px;
+    padding-right: 14rem;
+    text-align: right;
+    margin-top: 10rem;
+    color: white;
 }
