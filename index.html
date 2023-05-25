@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
+ <!--TIPOGRAFIA-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    
     <title>Filmoteca</title>
+   
 </head>
 <body>
     <header>
@@ -16,23 +21,29 @@
             <ul>
                 <li><a class="links" href="index.html">Inicio</a></li>
                 <li><a class="links" href="pages/peliculas.html">Peliculas</a></li>
-                <li><a class="links" href="pages/series.html">Series</a></li>
-                <li><a class="links" href="pages/nosotros.html">Nosotros</a></li>
+                <li><a class="links" href="pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main class="container">
-        <div class="estreno">
+        <div class="estreno" id="estreno">
             <h2>Estrenos</h2>
-        
-        <section id="imagenesestreno" class="imagenesestreno">
-            <img src="img/mariobros.jpeg" alt="">
-            <img src="img/evildead.jpeg" alt="">
-            <img src="img/johnwick.jpeg" alt="">
-            <img src="img/guardianesdelagalaxia.jpeg" alt="">
-        </section>
+            <section id="imagenesestreno" class="imagenesestreno">
+              <!-- <a href="pages/nosotros.html" class="imagenesestreno"> -->
+                <img src="img/mariobros.jpeg" alt="mariobros">
+                  <!-- </a> -->
+              <!-- <a href="" class="imagenesestreno"> -->
+                 <img src="img/evildead.jpeg" alt="">
+                 <!-- </a> -->
+              <!-- <a href=""class="imagenesestreno"> -->
+                    <img src="img/johnwick.jpeg" alt=""> 
+                  <!-- </a> -->
+             <!--  <a href=""class="imagenesestreno"> -->
+                  <img src="img/guardianesdelagalaxia.jpeg" alt="">
+                <!-- </a> -->
+            </section> 
          </div>
-        <div class="populares">
+        <div class="populares" id="populares">
             <h2>Populares</h2>
         </div>
         <section id="imagenespopulares" class="imagenespopulares">
@@ -41,7 +52,7 @@
             <img src="img/joker.jpg" alt="">
             <img src="img/spidermanintothespiderverse.jpg" alt="">
         </section>
-        <div class="recomendaciones">
+        <div class="recomendaciones" id="recomendaciones">
             <h2>Recomendaciones</h2>
         </div>
         <section id="imagenesrecomendaciones" class="imagenesrecomendaciones">
@@ -50,12 +61,58 @@
             <img src="img/TickTickBoom.jpg" alt="">
             <img src="img/parasite.jpg" alt="">
         </section>
+        <div id="info" class="info"></div> 
     </main>
         <button class="button1"><a href="pages/peliculas.html"> <span>Ver Más</span></a></button>
         <button class="button2"> <a href="pages/peliculas.html"><span>Ver Más</span></a></button>
         <button class="button3"> <a href="pages/peliculas.html"><span>Ver Más</span></a></button>
 </body>
 <footer>
-    <h4>Derechos reservados &copy; 2023 Películas</h4>
+  <section class="mail">
+    <a href="mailto:guarnierilautaro@gmail.com" target="_blank"><img src="img/gmail_black_logo_icon_147126.png" alt=""></a>
+  </section>
+  <section class="celu">
+    <a href="http://wa.me/541139190499" target="_blank"><img src="img/whatsapp_black_logo_icon_147050.png" alt=""></a>
+  </section>
+  <section class="insta">
+    <a href="https://www.instagram.com/leviathancine/" target="_blank"><img src="img/instagram_black_logo_icon_147122 (1).png" alt=""></a>
+  </section>
+  <h4>Derechos reservados &copy; 2023 Películas</h4>
 </footer>
 </html> 
+
+
+
+<!--                 <div class="card">
+                  <div class="card-front">
+                    <img id="mariobros" src="img/mariobros.jpeg" alt="Imagen">
+                  </div>
+                  <div class="card-back">
+                    <p>Descripción de la imagen</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-front">
+                    <img id="evildead" src="img/evildead.jpeg" alt="Imagen">
+                  </div>
+                  <div class="card-back">
+                    <p>Descripción de la imagen</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-front">
+                    <img id="johnwick" src="img/johnwick.jpeg" alt="Imagen">
+                  </div>
+                  <div class="card-back">
+                    <p>Descripción de la imagen</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-front">
+                    <img id="guardianes" src="img/guardianesdelagalaxia.jpeg" alt="Imagen">
+                  </div>
+                  <div class="card-back">
+                    <p>Descripción de la imagen</p>
+                  </div>
+                </div>
+              </section> -->
