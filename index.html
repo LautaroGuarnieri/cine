@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
- <!--TIPOGRAFIA-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script defer src="script/modal.js"></script> 
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    
+     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <title>Filmoteca</title>
    
 </head>
@@ -17,30 +19,44 @@
         <div>
             <img src="img/filmoteca.jpeg" alt="">
         </div>
-        <nav>
-            <ul>
-                <li><a class="links" href="index.html">Inicio</a></li>
-                <li><a class="links" href="pages/peliculas.html">Peliculas</a></li>
-                <li><a class="links" href="pages/contacto.html">Contacto</a></li>
-            </ul>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="pages/peliculas.html">Películas</a>
+            <a href="pages/contacto.html">Contacto</a>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
         </nav>
+        <form class="topnav">
+          <input type="text" placeholder="Buscador..." name="search">
+        </form>
     </header>
+
     <main class="container">
+  <section id="homepage">
+      <section>
+        <div class="fondo-modal" id="fondo-modal">
+         <div class="ventana-modal" id="ventana-modal">
+             <h1>¡Bienvenido/a!<h1>
+             <p class="mb-4">En esta página encontrarás todas<br> las películas, próximos estrenos y recomendaciones.</p>
+             <div>
+                 <button class="boton" id="cerrar-aviso">Aceptar</button>
+             </div>
+         </div>
+     </div>
+     </section>
+
         <div class="estreno" id="estreno">
             <h2>Estrenos</h2>
             <section id="imagenesestreno" class="imagenesestreno">
-              <!-- <a href="pages/nosotros.html" class="imagenesestreno"> -->
                 <img src="img/mariobros.jpeg" alt="mariobros">
-                  <!-- </a> -->
-              <!-- <a href="" class="imagenesestreno"> -->
-                 <img src="img/evildead.jpeg" alt="">
-                 <!-- </a> -->
-              <!-- <a href=""class="imagenesestreno"> -->
+                 <img src="img/evildead.jpg" alt="">
                     <img src="img/johnwick.jpeg" alt=""> 
-                  <!-- </a> -->
-             <!--  <a href=""class="imagenesestreno"> -->
-                  <img src="img/guardianesdelagalaxia.jpeg" alt="">
-                <!-- </a> -->
+                  <img src="img/gotg3.jpg" alt="">
             </section> 
          </div>
         <div class="populares" id="populares">
@@ -50,7 +66,7 @@
             <img src="img/Gatoconbotaselultimodeseo.jpg" alt="">
             <img src="img/babylon.jpg" alt="">
             <img src="img/joker.jpg" alt="">
-            <img src="img/spidermanintothespiderverse.jpg" alt="">
+            <img src="img/spiderman.jpg" alt="">
         </section>
         <div class="recomendaciones" id="recomendaciones">
             <h2>Recomendaciones</h2>
@@ -62,11 +78,19 @@
             <img src="img/parasite.jpg" alt="">
         </section>
         <div id="info" class="info"></div> 
-    </main>
+
         <button class="button1"><a href="pages/peliculas.html"> <span>Ver Más</span></a></button>
         <button class="button2"> <a href="pages/peliculas.html"><span>Ver Más</span></a></button>
         <button class="button3"> <a href="pages/peliculas.html"><span>Ver Más</span></a></button>
+  </section>
+
+  <section id="pelis">
+
+
+  </section>
+      </main>
 </body>
+
 <footer>
   <section class="mail">
     <a href="mailto:guarnierilautaro@gmail.com" target="_blank"><img src="img/gmail_black_logo_icon_147126.png" alt=""></a>
@@ -79,40 +103,5 @@
   </section>
   <h4>Derechos reservados &copy; 2023 Películas</h4>
 </footer>
+
 </html> 
-
-
-
-<!--                 <div class="card">
-                  <div class="card-front">
-                    <img id="mariobros" src="img/mariobros.jpeg" alt="Imagen">
-                  </div>
-                  <div class="card-back">
-                    <p>Descripción de la imagen</p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-front">
-                    <img id="evildead" src="img/evildead.jpeg" alt="Imagen">
-                  </div>
-                  <div class="card-back">
-                    <p>Descripción de la imagen</p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-front">
-                    <img id="johnwick" src="img/johnwick.jpeg" alt="Imagen">
-                  </div>
-                  <div class="card-back">
-                    <p>Descripción de la imagen</p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-front">
-                    <img id="guardianes" src="img/guardianesdelagalaxia.jpeg" alt="Imagen">
-                  </div>
-                  <div class="card-back">
-                    <p>Descripción de la imagen</p>
-                  </div>
-                </div>
-              </section> -->

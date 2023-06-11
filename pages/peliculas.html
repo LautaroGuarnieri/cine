@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peliculas</title>
     <link rel="stylesheet" href="../css/peliculas.css">
-    
-    <!--TIPOGRAFIA-->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 
@@ -17,16 +16,23 @@
         <div>
             <img src="../img/filmoteca.jpeg" alt="">
         </div>
-        <nav>
-            <ul>
-                <li><a class="links" href="../index.html">Inicio</a></li>
-                <li><a class="links" href="peliculas.html">Peliculas</a></li>
-                <li><a class="links" href="contacto.html">Contacto</a></li>
-            </ul>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+        <nav class="menu">
+            <a href="../index.html">Inicio</a>
+            <a href="peliculas.html">Películas</a>
+            <a href="contacto.html">Contacto</a>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
         </nav>
+        <form class="topnav">
+          <input type="text" placeholder="Buscador..." name="search">
+        </form>
     </header>
 
-    <main class="container">
 
         <div class="dropdown">
             <button type="button" class="dropbtn" data-toggle="dropdown">
@@ -44,8 +50,7 @@
                 <li><a href="#">SCI-FI</a></li>
             </div>
           </div>
-          
-          <div class="box">
+          <div class="box3">
 
           </div>
 
@@ -55,8 +60,8 @@
         
         <section id="imgestreno" class="imgestreno">
 
-           <a href="mariobros.html"><img src="../img/mariobros.jpeg"></a> 
-            <a href="evildead.html"><img src="../img/evildead.jpeg"></a>
+            <a href="mariobros.html"><img src="../img/mariobros.jpeg"></a> 
+            <a href="evildead.html"><img src="../img/evildead.jpg"></a>
             <a href="johnwick.html"><img src="../img/johnwick.jpeg" alt=""> </a> 
             <a href="gdlg.html"><img src="../img/gotg3.jpg" alt=""> </a> 
             <a href="spiderman.html"> <img src="../img/spiderman.jpg" alt=""> </a> 
@@ -72,6 +77,7 @@
 
     </main>
 </body>
+
 <footer>
     <section class="mail">
         <a href="mailto:guarnierilautaro@gmail.com" target="_blank"><img src="../img/gmail_black_logo_icon_147126.png" alt=""></a>

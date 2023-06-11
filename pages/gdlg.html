@@ -6,33 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <title>guardianes de la galaxia 3</title>
-    <link rel="stylesheet" href="../css/mariobros.css">
+    <title> Ver (Guardianes de la Galaxia 3) | Filmoteca </title>
+    <link rel="stylesheet" href="../css/peliculas.css">
 </head>
 <body>
     <header>
         <div>
             <img src="../img/filmoteca.jpeg" alt="">
         </div>
-        <nav>
-            <ul>
-                <li><a class="links" href="../index.html">Inicio</a></li>
-                <li><a class="links" href="peliculas.html">Peliculas</a></li>
-                <li><a class="links" href="contacto.html">Contacto</a></li>
-            </ul>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+        <nav class="menu">
+            <a href="../index.html">Inicio</a>
+            <a href="peliculas.html">Películas</a>
+            <a href="contacto.html">Contacto</a>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
         </nav>
+        <form class="topnav">
+          <input type="text" placeholder="Buscador..." name="search">
+        </form>
     </header>
 <main>
     <h1>Guardianes de la Galaxia 3</h1>
     <div class="todo">
-        <img src="../img/guardianesdelagalaxia.jpeg" alt="" class="poster">
-    <section class="trailer">
-        <video src="../video/gdlg.mp4" width="854" height="480" controls></video>
-    </section>
+        <img src="../img/gotg3.jpg" alt="" class="poster">
+        <div class="video-container">
+            <iframe src="../video/gdlg.mp4"></iframe>
+          </div>
     <section class="sinopsis">
-        <h2>Sinopsis</h2>
-        <p>La querida banda de los Guardianes se instala en Knowhere. Pero sus vidas no tardan en verse alteradas por los ecos del turbulento pasado de Rocket. Peter Quill, aún conmocionado por la pérdida de Gamora, debe reunir a su equipo en una peligrosa misión para salvar la vida de Rocket, una misión que, si no se completa con éxito, podría muy posiblemente conducir al final de los Guardianes tal y como los conocemos.</p>
+        <h3>Sinopsis</h3>
+        <p>Aunque sigue afectado por la pérdida de Gamora, Peter Quill debe reunir a su equipo para defender el universo de una nueva amenaza o, en caso de fracasar, será el final de los Guardianes.</p>
     </section>
+    <div class="actores">
+        <p>Actores: Adelynn Spoon, Adriana Leonard, Alexis Hadesty, Amelia Waters, Asim Chaudhry, Austin Freeman, Autumn Griffin</p>
+    </div>
+
+    <section class="opciones">
+        <button class="btn" onclick="location.href='https://pelisplus.sx/movies/guardianes-de-la-galaxia-volumen-3/'" target="_blank"><span>Ver online </span></button>
+        <button class="btn" onclick="location.href='https://megaup.net/2Awz1/Guardianes_de_la_Galaxia_Volumen_3(Subt-HD-1080p).mp4'" target="_blank"><span>Descargar </span></button>
+ 
+    </section>
+
+    <div class="box">
+    </div>
+
     </div>
 </main>
 

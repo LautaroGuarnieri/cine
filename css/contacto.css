@@ -5,64 +5,86 @@
 }
 
 header {
-background-color: rgb(10, 10, 10);
-justify-content: space-between;
-padding: 10px;
-display: flex;
-align-items: center;
-margin: 0px;
-margin-left: 0px;
-border: 5px solid black;
-}
+  background-color: rgb(10, 10, 10);
+  justify-content: space-between;
+  margin: 0px;
+  margin-left: 0px;
+  border: 5px solid black;
+  font-family: 'Nunito';
+  height: 100px;
+  padding: 0 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+  }
+  
 header img {
-    padding: 0;
-    display: flex;
-    justify-content: space-between; 
-    padding-left: 0px ;
-}
- nav{
-    overflow: hidden;
- }
- nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 20px;
- }
- nav li{
-    float: right;
-    margin-top: 0px;
-    margin: 10px;
- }
+      padding: 0;
+      display: flex;
+      justify-content: space-between; 
+      padding-left: 0px ;
+  }
+  
+  .menu a{
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: 0.4s;
+      background-color:rgb(99, 0, 0) ;
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 12px 70px;
+      margin: 10px;
+      font-size: 13px;
+      font-weight: bold;
+      text-decoration: none;
+      text-transform: uppercase;
+      border: 2px solid black;
+      border-radius: 15px;
+      box-shadow:0 2px 5px black;
+  }
+  
+  .mostrar-menu,
+  .esconder-menu {
+      font-size: 30px;
+      cursor: pointer;
+      display: none;
+      transition: 0.4s;
+  }
+  
+  .mostrar-menu{
+      order: 1;
+  }
+  
+  .menu a:hover,
+  .mostrar-menu:hover,
+  .esconder-menu:hover{
+      background-color: rgb(25, 0, 0);
+      box-shadow: 0 4px 8px black;
+      transform: translateY(2px);
+  }
+  
+  #check {
+      display: none;
+  }
+  
+  form.topnav input[type=text] {
+      float: right;
+      padding: 10px;
+      border: none;
+      margin-top: 8px;
+      margin-right: 16px;
+      font-size: 17px;
+      border-radius: 25px;
+      background-color: #444;
+      color: #fff;
+    }
 
- nav li a {
-    background-color:rgb(99, 0, 0) ;
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 12px 100px;
-    margin: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
-    border: 2px solid black;
-    border-radius: 5px;
-    box-shadow:0 2px 5px black;
-    transition: all 0.3s ease;
-}
-nav li a:hover {
-    background-color: rgb(25, 0, 0);
-    box-shadow: 0 4px 8px black;
-    transform: translateY(2px);
-}
 body{
-    background-image:url(../img/fondo.png);
+    background-image:url(../img/fondo2.png);
     background-repeat: none;
     background-size: 100%;
-
     margin: 0;
     padding: 0;
     flex-direction: column;
@@ -70,37 +92,90 @@ body{
 
 .contacto.titulo {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 60px;
 }
 .contacto-titulo h2 {
-  font-size: 36px;
+  margin-top: 60px;
+  margin-left: 145px;
+  font-size: 30px;
   font-weight: bold;
   color: white;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-family: "nunito";
+  font-family: 'Nunito';
 }
 
 .parrafo {
   text-align: center;
   margin-top: 20px;
+  
 }
 .parrafo p {
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.5;
   color: white;
   font-family: "nunito";
 }
+.box {
+    position: absolute;
+    width: 1800px;
+    height: 145px;
+    left: 60px;
+    top: 130px;
+    background: #330404;
+    border-radius: 7px;
+    z-index:-1;
+  }
+
+  .gracias.titulo {
+    text-align: center;
+    margin-top: 60px;
+  }
+  .gracias-titulo h2 {
+    margin-top: 60px;
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Nunito';
+  }
+  
+  .parrafo2 {
+    text-align: center;
+    margin-top: 20px;
+    
+  }
+  .parrafo2 p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: white;
+    font-family: "nunito";
+  
+  }
+  .box1 {
+      position: absolute;
+      width: 1400px;
+      height: 190px;
+      left: 300px;
+      top: 130px;
+      background: rgb(99, 0, 0) ;
+      border-radius: 7px;
+      z-index:-1;
+    }
+  
 
 .formulario {
   max-width: 500px;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 30px;
   padding: 20px;
   background-color: #333;
   color: #fff;
-  border: 2px solid #ff0000;
   border-radius: 10px;
+  font-family: 'Nunito';
 }
 
 .formulario h2 {
@@ -126,6 +201,7 @@ body{
   border-radius: 5px;
   background-color: #444;
   color: #fff;
+  font-size: 18px;
 }
 
 .form-group input:focus,
@@ -134,24 +210,60 @@ body{
   background-color: #555;
 }
 
-button [type="submit"] {
-  display: block;
+.group {
+  outline: none;
+  background-color: #555;
   width: 100%;
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #ff0000;
+  background-color: #444;
   color: #fff;
   font-size: 18px;
-  cursor: pointer;
-}
-
-button[type="submit"]:hover {
-  background-color: #cc0000;
-}
+  }
 
 
-footer {
+  .button {
+    border-radius: 5px;
+    background-color: rgb(99, 0, 0) ;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+  footer {
     background-color: #0d0d0d;
     color: white;
     padding: 20px;
@@ -159,6 +271,7 @@ footer {
     width: 100%;
     text-align: right;
     position: absolute;
+    font-family: 'nunito';
   }
   
   footer p {
@@ -247,68 +360,109 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (min-width: 1200px) {
-    header {
-        padding-left: 5%;
-        padding-right: 5%;
+  @media only screen and (min-width: 1200px) {
+    .menu a{
+        text-align: center;
+        display: inline-block;
+        padding: 12px 35px;
+        margin: 10px;
+        font-size: 12px;
     }
-    nav ul {
-        padding-left: 0;
+form.topnav input[type=text]{
+        float: right;
+        padding: 10px;
+        margin-top: 8px;
+        margin-right: 7px;
+        font-size: 14px;
     }
-    nav li {
-        margin: 0 10px;
-    }
-    nav li a {
-        padding: 12px 50px;
-    }
+    .imagenesestreno,
+    .imagenespopulares,
+    .imagenesrecomendaciones {
+    width: 600px;
+    height: 430px;
+    top: 15rem;
+}
+    .imagenesestreno img,
+    .imagenespopulares img,
+    .imagenesrecomendaciones img {
+    width: 0px;
+}
+}
 
+@media only screen and (max-width:1199px) and (min-width: 769px){
+    .menu a{
+        text-align: center;
+        display: inline-block;
+        padding: 12px 35px;
+        margin: 10px;
+        font-size: 12px;
+    }
+form.topnav input[type=text]{
+        padding: 9px;
+        font-size: 12px;
+        width: 13vh;
+    }
+    .imagenesestreno,
+    .imagenespopulares,
+    .imagenesrecomendaciones {
+        width: 100%;
+        height: 300px;
       }
-    
-@media only screen and (max-width:1199px) and (min-width: 768px) {
-        header {
-            padding-left: 5%;
-            padding-right: 5%;
-        }
-        nav ul {
-            padding-left: 0;
-        }
-        nav li {
-            margin: 0 10px;
-        }
-        nav li a {
-            padding: 12px 30px;
-        }
-        
+
+    .imagenesestreno img,
+    .imagenespopulares img,
+    .imagenesrecomendaciones img {
+        width: 0px;
     }
-    
-@media only screen and (max-width: 767px) {
-        header {
-            padding-left: 5%;
-            padding-right: 5%;
-        }
-        nav ul {
-            flex-direction: column;
-            align-items: center;
-        }
-        nav li {
-            margin: 10px 0;
-        }
-        nav li a {
-            padding: 12px 20px;
-        }
-      }
+
+}
+
+@media(max-width: 768px){
+header img {
+        display: block;
+    }
+form.topnav input[type=text]{
+        display: none;
+    }
+
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(10, 10, 10);
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+    .menu a{
+        display: block;
+        padding: 20px;
+    }
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+    }
+    .container{
+        flex-direction: column;
+    }
+
+    .button1,
+    .button2,
+    .button3 {
+        display: block;
+        padding: 3 20px;
+        flex-direction: column;
+    }
+}

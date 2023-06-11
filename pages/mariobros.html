@@ -6,33 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <title>Mario Bros</title>
-    <link rel="stylesheet" href="../css/mariobros.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>Ver (Super Mario Bros) | Filmoteca </title>
+    <link rel="stylesheet" href="../css/peliculas.css">
 </head>
 <body>
     <header>
         <div>
             <img src="../img/filmoteca.jpeg" alt="">
         </div>
-        <nav>
-            <ul>
-                <li><a class="links" href="../index.html">Inicio</a></li>
-                <li><a class="links" href="peliculas.html">Peliculas</a></li>
-                <li><a class="links" href="contacto.html">Contacto</a></li>
-            </ul>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+        <nav class="menu">
+            <a href="../index.html">Inicio</a>
+            <a href="peliculas.html">Películas</a>
+            <a href="contacto.html">Contacto</a>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
         </nav>
+        <form class="topnav">
+          <input type="text" placeholder="Buscador..." name="search">
+        </form>
     </header>
 <main>
-    <h1>Super Mario Bros</h1>
+    <h1>Super Mario Bros: La Película</h1>
     <div class="todo">
         <img src="../img/mariobros.jpeg" alt="" class="poster">
-    <section class="trailer">
-        <video src="../video/mariobros.mp4" width="854" height="480" controls></video>
-    </section>
+
+        <div class="video-container">
+            <iframe src="../video/mariobros.mp4"></iframe>
+          </div>
+
     <section class="sinopsis">
-        <h2>Sinopsis</h2>
+        <h3>Sinopsis</h3>
         <p>Dos hermanos plomeros, Mario y Luigi, caen por las alcantarillas y llegan a un mundo subterráneo mágico en el que deben enfrentarse al malvado Bowser para rescatar a la princesa Peach, quien ha sido forzada a aceptar casarse con él.</p>
     </section>
+
+    <div class="actores">
+        <p>Actores: Chris Pratt, Charlie Day, Anya Taylor-Joy, Jack Black, Keegan-Michael Key, Seth Rogen, Fred Armisen, Khary Payton, Sebastian Maniscalco, Charles Martinet, Kevin Michael Richardson, Juliet Jelenic, Rino Romano, John DiMaggio, Jessica DiCicco</p>
+    </div>
+
+         
+       <div class="box">
+    </div>
+
+    <section class="opciones">
+        <button class="btn" onclick="location.href='https://www11.cuevana3.ch/19207/super-mario-bros-la-pelicula'" target="_blank"><span>Ver online </span></button>
+        <button class="btn" onclick="location.href='https://pelisplay.cc/download?id=MTY4NTA3'" target="_blank"><span>Descargar </span></button>
+ 
+    </section>
+
     </div>
 </main>
 

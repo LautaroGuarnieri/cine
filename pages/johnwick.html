@@ -6,34 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <title>John Wick 4</title>
-    <link rel="stylesheet" href="../css/johnwick.css">
+    <title>Ver (John Wick 4) | Filmoteca </title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="../css/peliculas.css">
 </head>
 <body>
     <header>
         <div>
             <img src="../img/filmoteca.jpeg" alt="">
         </div>
-        <nav>
-            <ul>
-                <li><a class="links" href="../index.html">Inicio</a></li>
-                <li><a class="links" href="peliculas.html">Peliculas</a></li>
-                <li><a class="links" href="contacto.html">Contacto</a></li>
-            </ul>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+        <nav class="menu">
+            <a href="../index.html">Inicio</a>
+            <a href="peliculas.html">Películas</a>
+            <a href="contacto.html">Contacto</a>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
         </nav>
+        <form class="topnav">
+          <input type="text" placeholder="Buscador..." name="search">
+        </form>
     </header>
 <main>
     <h1>John Wick 4</h1>
     <div class="todo">
         <img src="../img/johnwick.jpeg" alt="" class="poster">
-    <section class="trailer">
-        <video src="../video/johnwick.mp4" width="854" height="480" controls></video>
-    </section>
+        <div class="video-container">
+            <iframe src="../video/johnwick.mp4"></iframe>
+          </div>
+
     <section class="sinopsis">
-        <h2>Sinopsis</h2>
+        <h3>Sinopsis</h3>
         <p>El marqués Vincent de Gramont pretende matar a John Wick para afianzar su poder en la Orden Suprema. Sin embargo, John tratará de adelantarse a cada uno de sus movimientos hasta lograr enfrentarse cara a cara con su peor enemigo.
         </p>
     </section>
+    <div class="actores">
+        <p>Actores: Keanu Reeves, Donnie Yen, Bill Skarsgård, Ian McShane, Laurence Fishburne, Lance Reddick, Clancy Brown, Hiroyuki Sanada, Rina Sawayama, Scott Adkins, Aimée Kwan, Marko Zaror, Natalia Tena, George Georgiou, Daiki Suzuki</p>
+    </div>
+    <section class="opciones">
+        <button class="btn" onclick="location.href='https://pelisplus.sx/movies/john-wick-4/'" target="_blank"><span>Ver online </span></button>
+        <button class="btn" onclick="location.href='https://megaup.net/1eqvt/John_Wick_4(Sub-HD-1080p).mkv'" target="_blank"><span>Descargar </span></button>
+ 
+    </section>
+
+    <div class="box">
+    </div>
+
     </div>
 </main>
 

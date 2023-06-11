@@ -6,35 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <title>La Sirenita</title>
-    <link rel="stylesheet" href="../css/sirenita.css">
+    <title>Ver (La Sirenita) | Filmoteca </title>
+    <link rel="stylesheet" href="../css/peliculas.css">
 </head>
 <body>
     <header>
         <div>
             <img src="../img/filmoteca.jpeg" alt="">
         </div>
-        <nav>
-            <ul>
-                <li><a class="links" href="../index.html">Inicio</a></li>
-                <li><a class="links" href="peliculas.html">Peliculas</a></li>
-                <li><a class="links" href="contacto.html">Contacto</a></li>
-            </ul>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+        <nav class="menu">
+            <a href="../index.html">Inicio</a>
+            <a href="peliculas.html">Películas</a>
+            <a href="contacto.html">Contacto</a>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
         </nav>
+        <form class="topnav">
+          <input type="text" placeholder="Buscador..." name="search">
+        </form>
     </header>
 <main>
     <h1>La Sirenita</h1>
     <div class="todo">
         <img src="../img/sirenita.jpg" alt="" class="poster">
-    <section class="trailer">
-        <video src="../video/sirenita.mp4" width="854" height="480" controls></video>
-    </section>
+        <div class="video-container">
+            <iframe src="../video/sirenita.mp4"></iframe>
+          </div>
     <section class="sinopsis">
-        <h2>Sinopsis</h2>
+        <h3>Sinopsis</h3>
         <p>Anhelando conocer el mundo más allá del mar, una joven sirena visita la superficie y se enamora del apuesto príncipe Eric. Siguiendo su corazón, hace un trato con la malvada bruja del mar, Úrsula, para experimentar la vida en tierra</p>
     </section>
+    <div class="actores">
+        <p>Actores: Halle Bailey, Jonah Hauer-King, Daveed Diggs, Awkwafina, Jacob Tremblay, Noma Dumezweni, Javier Bardem, Melissa McCarthy, Art Malik, Jessica Alexander, Emily Coates, Jude Akuwudike, Russell Balogh, Adrian Christopher, Simone Ashley</p>
     </div>
-</main>
+    <section class="opciones">
+        <button class="btn" onclick="location.href='https://pelisplus.sx/movies/la-sirenita/'" target="_blank"><span>Ver online </span></button>
+        <button class="btn" onclick="location.href='https://megaup.net/1eGdp/La_sirenita(Sub-DVD).mp4'" target="_blank"><span>Descargar </span></button>
+ 
+    </section>
+
+    <div class="box">
+    </div>
+
+</div>
+
+    </main>
+
 
 
 
